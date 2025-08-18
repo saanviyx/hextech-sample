@@ -620,7 +620,6 @@ section {
     z-index: 10;
     background: var(--accent);
     box-shadow: var(--shadow-lg);
-    transform: scale(1.02);
 }
 
 .service-front {
