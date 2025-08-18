@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexTech</title>
+    <meta name="description" content="Hextech Website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-text" id="navText">HEXTECH</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#packages" class="nav-link">PACKAGES</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-content" id="heroContent">
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    Next-Gen AI, Built in Dubai for Small Teams to Make Big Moves.
+                </h1>
+                <p class="hero-subtitle">
+                    Let our team handle the websites, automations, and AI setup — so you can focus on scaling your business, closing more deals, and building your vision.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Get Started</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('services')">View Services</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="product-mockups">
+                    <div class="mockup main">
+                        <img src="https://images.unsplash.com/photo-1551281044-8d8d0d8f1f7b?q=80&w=1080&auto=format&fit=crop" alt="Dashboard UI preview">
+                    </div>
+                    <div class="mockup small small-left">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1080&auto=format&fit=crop" alt="Mobile app preview">
+                    </div>
+                    <div class="mockup small small-right">
+                        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1080&auto=format&fit=crop" alt="Chatbot preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-layout reverse">
+                <div class="section-side-title">
+                    <h2 class="side-title">ABOUT</h2>
+                </div>
+                <div class="section-content">
+                    <div class="about-content">
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="tech-features">
+                    <div class="tech-feature">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="feature-icon">
+                            <i class="fas fa-gauge"></i>
+                        </div>
+                        <h4>Lightning Fast</h4>
+                        <p>Optimized for speed and performance</p>
+                    </div>
+                    <div class="tech-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Secure & Reliable</h4>
+                        <p>Enterprise-grade security protocols</p>
+                    </div>
+                    <div class="tech-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Growth Oriented</h4>
+                        <p>Designed to turn visitors into customers</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-content">
+            <div class="services-container">
+
+                <!-- 1. Web Development -->
+                <div class="service-card" data-service="web-dev">
+                    <div class="service-front">
+                        <h4>Web Development</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Responsive sites and apps with modern frameworks for fast, scalable performance.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">React & Vue.js</span>
+                                <span class="feature-pill">Node.js Backend</span>
+                                <span class="feature-pill">PWAs</span>
+                                <span class="feature-pill">API Development</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">150+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Cloud Solutions -->
+                <div class="service-card" data-service="cloud">
+                    <div class="service-front">
+                        <h4>Cloud Solutions</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Cloud setup, scaling, and security with AWS, Azure, and GCP expertise.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">AWS Certified</span>
+                                <span class="feature-pill">Auto Scaling</span>
+                                <span class="feature-pill">24/7 Monitoring</span>
+                                <span class="feature-pill">Disaster Recovery</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">Migrations</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">40%</span>
+                                    <span class="stat-label">Cost Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. AI & Machine Learning -->
+                <div class="service-card" data-service="ai-ml">
+                    <div class="service-front">
+                        <h4>AI & ML</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">AI models for automation, predictions, and actionable business insights.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">TensorFlow</span>
+                                <span class="feature-pill">Computer Vision</span>
+                                <span class="feature-pill">NLP</span>
+                                <span class="feature-pill">Predictive Analytics</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">85%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">60%</span>
+                                    <span class="stat-label">Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Cybersecurity -->
+                <div class="service-card" data-service="cybersecurity">
+                    <div class="service-front">
+                        <h4>Cybersecurity</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Protect assets with audits, penetration tests, and real-time threat monitoring.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">Pen Testing</span>
+                                <span class="feature-pill">SOC Compliance</span>
+                                <span class="feature-pill">Threat Monitoring</span>
+                                <span class="feature-pill">Incident Response</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">99.8%</span>
+                                    <span class="stat-label">Detection</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Mobile Development -->
+                <div class="service-card" data-service="mobile">
+                    <div class="service-front">
+                        <h4>Mobile Apps</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">iOS & Android apps with smooth UX and strong backend integration.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">React Native</span>
+                                <span class="feature-pill">Flutter</span>
+                                <span class="feature-pill">Native iOS & Android</span>
+                                <span class="feature-pill">App Store Deploy</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">200+</span>
+                                    <span class="stat-label">Apps</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">4.8★</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Data Analytics -->
+                <div class="service-card" data-service="data-analytics">
+                    <div class="service-front">
+                        <h4>Data Analytics</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Turn raw data into insights with real-time dashboards and BI tools.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">Power BI</span>
+                                <span class="feature-pill">Tableau</span>
+                                <span class="feature-pill">Live Dashboards</span>
+                                <span class="feature-pill">ETL Pipelines</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">10TB+</span>
+                                    <span class="stat-label">Data</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">35%</span>
+                                    <span class="stat-label">Revenue Up</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. UI/UX Design -->
+                <div class="service-card" data-service="ui-ux">
+                    <div class="service-front">
+                        <h4>UI/UX Design</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Engaging, user-focused designs that boost usability and brand appeal.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">Figma</span>
+                                <span class="feature-pill">Adobe XD</span>
+                                <span class="feature-pill">Wireframing</span>
+                                <span class="feature-pill">Prototyping</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">300+</span>
+                                    <span class="stat-label">Designs</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">98%</span>
+                                    <span class="stat-label">Client Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. DevOps -->
+                <div class="service-card" data-service="devops">
+                    <div class="service-front">
+                        <h4>DevOps</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Automated CI/CD pipelines, monitoring, and infrastructure as code.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">Docker</span>
+                                <span class="feature-pill">Kubernetes</span>
+                                <span class="feature-pill">Jenkins</span>
+                                <span class="feature-pill">Terraform</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">70%</span>
+                                    <span class="stat-label">Faster Releases</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. E-Commerce Solutions -->
+                <div class="service-card" data-service="ecommerce">
+                    <div class="service-front">
+                        <h4>E-Commerce</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Custom online stores with payment integration and conversion optimization.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">Shopify</span>
+                                <span class="feature-pill">WooCommerce</span>
+                                <span class="feature-pill">Payment Gateways</span>
+                                <span class="feature-pill">SEO Optimized</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">400+</span>
+                                    <span class="stat-label">Stores</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">50%</span>
+                                    <span class="stat-label">Sales Boost</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Digital Marketing -->
+                <div class="service-card" data-service="digital-marketing">
+                    <div class="service-front">
+                        <h4>Digital Marketing</h4>
+                    </div>
+                    <div class="service-expanded">
+                        <div class="service-expanded-content">
+                            <p class="service-description">Targeted SEO, ads, and campaigns to grow traffic and brand awareness.</p>
+                            <div class="service-features">
+                                <span class="feature-pill">SEO</span>
+                                <span class="feature-pill">Google Ads</span>
+                                <span class="feature-pill">Social Media</span>
+                                <span class="feature-pill">Email Campaigns</span>
+                            </div>
+                            <div class="service-stats">
+                                <div class="stat">
+                                    <span class="stat-number">3x</span>
+                                    <span class="stat-label">Traffic</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">120%</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-layout">
+                    <div class="section-side-title">
+                        <h2 class="side-title">PACKAGES</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-header">
+                            <h3 class="section-subtitle-main">Choose Your Perfect Package</h3>
+                            <p class="section-subtitle">All builds are mobile-first, WCAG-friendly, and ready for future scale.</p>
+                            <p class="section-note">* Prices are one-time. Hosting not included.</p>
+                        </div>
+
+                <!-- Main Packages -->
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">BASIC</h3>
+                            <p class="package-subtitle">Starter Presence</p>
+                            <div class="package-pricing">
+                                <span class="original-price">AED 3,999</span>
+                                <span class="current-price">AED 1,999</span>
+                            </div>
+                            <p class="package-description">Perfect for micro businesses & landing pages</p>
+                        </div>
+                        <div class="package-features-inline">
+                            <span class="feature-tag">Responsive Design</span>
+                            <span class="feature-tag">CMS Access</span>
+                            <span class="feature-tag">SEO Foundation Setup</span>
+                            <span class="feature-tag">3hr Training</span>
+                        </div>
+                        <div class="package-action">
+                            <button class="btn btn-outline package-btn" onclick="selectPackage('basic')">Get Started</button>
+                        </div>
+                    </div>
+
+                    <div class="package-card popular">
+                        <div class="popular-badge">
+                            <span>Most Popular</span>
+                        </div>
+                        <div class="package-header">
+                            <h3 class="package-name">GROWTH</h3>
+                            <p class="package-subtitle">Engage & Convert</p>
+                            <div class="package-pricing">
+                                <span class="original-price">AED 7,999</span>
+                                <span class="current-price">AED 4,999</span>
+                            </div>
+                            <p class="package-description">SMBs ready to lift conversions with instant chat</p>
+                        </div>
+                        <div class="package-features-inline">
+                            <span class="feature-tag">All Basic Features</span>
+                            <span class="feature-tag">Interactive Live Chatbot</span>
+                            <span class="feature-tag">Custom UX/UI</span>
+                            <span class="feature-tag">AI Integration</span>
+                        </div>
+                        <div class="package-action">
+                            <button class="btn btn-outline package-btn" onclick="selectPackage('growth')">Get Started</button>
+                        </div>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">ELITE</h3>
+                            <p class="package-subtitle">Enterprise Experience</p>
+                            <div class="package-pricing">
+                                <span class="original-price">AED 14,999</span>
+                                <span class="current-price">AED 9,999</span>
+                            </div>
+                            <p class="package-description">Corporates & scale-ups needing AI-powered support</p>
+                        </div>
+                        <div class="package-features-inline">
+                            <span class="feature-tag">Everything in Growth</span>
+                            <span class="feature-tag">Bespoke Design</span>
+                            <span class="feature-tag">Multi-lingual AI</span>
+                            <span class="feature-tag">Priority Support</span>
+                        </div>
+                        <div class="package-action">
+                            <button class="btn btn-outline package-btn" onclick="selectPackage('elite')">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-Ons Section -->
+                <div class="addons-section">
+                    <h3 class="addons-title">Enhance Your Package</h3>
+                    <p class="addons-subtitle">Add-On Extras - Enhance your package with these optional premium services</p>
+                    
+                    <div class="addons-grid">
+                        <div class="addon-card">
+                            <div class="addon-header">
+                                <h4 class="addon-name">Annual Maintenance</h4>
+                                <span class="addon-price">AED 299/yr</span>
+                            </div>
+                            <p class="addon-description">Core & plugin updates, backups, security patches</p>
+                            <ul class="addon-features">
+                                <li>Monthly security updates</li>
+                                <li>Automated backups</li>
+                                <li>Performance monitoring</li>
+                                <li>24/7 uptime tracking</li>
+                            </ul>
+                            <button class="btn btn-addon" onclick="addAddon('maintenance')">Add to Package</button>
+                        </div>
+
+                        <div class="addon-card">
+                            <div class="addon-header">
+                                <h4 class="addon-name">Design Refresh</h4>
+                                <span class="addon-price">AED 399/request</span>
+                            </div>
+                            <p class="addon-description">Homepage hero swap, new section layout, colour revamp, etc.</p>
+                            <ul class="addon-features">
+                                <li>Hero section redesign</li>
+                                <li>Color scheme updates</li>
+                                <li>Layout modifications</li>
+                                <li>Content restructuring</li>
+                            </ul>
+                            <button class="btn btn-addon" onclick="addAddon('design')">Add to Package</button>
+                        </div>
+
+                        <div class="addon-card">
+                            <div class="addon-header">
+                                <h4 class="addon-name">AI Content Studio</h4>
+                                <span class="addon-price">AED 599</span>
+                                <span class="new-badge">New</span>
+                            </div>
+                            <p class="addon-description">Professional AI-generated visual content for your website</p>
+                            <ul class="addon-features">
+                                <li>Custom AI-generated images</li>
+                                <li>Professional video content</li>
+                                <li>Brand-consistent visuals</li>
+                                <li>Unlimited revisions</li>
+                            </ul>
+                            <button class="btn btn-addon" onclick="addAddon('ai-content')">Add to Package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-layout reverse">
+                <div class="section-side-title">
+                    <h2 class="side-title">CONTACT</h2>
+                </div>
+                <div class="section-content">
+                    <div class="contact-header">
+                        <h3 class="section-subtitle-main">Let's Build Something <span class="text-accent">Extraordinary</span></h3>
+                        <p class="section-subtitle">Ready to transform your digital presence? Choose how you'd like to connect with our team.</p>
+                    </div>
+
+            <div class="contact-grid">
+                <div class="contact-card" data-morph>
+                    <div class="card-bg"></div>
+                    <i class="fas fa-comments icon"></i>
+                    <h3>Quick Chat</h3>
+                    <p>15-minute discovery call to discuss your project and find the perfect package.</p>
+                    <button class="btn btn-primary" onclick="bookCall()">Book Discovery Call</button>
+                </div>
+                <div class="contact-card" data-morph>
+                    <div class="card-bg"></div>
+                    <i class="fas fa-bolt icon"></i>
+                    <h3>Instant Connect</h3>
+                    <p>WhatsApp or call us directly for immediate assistance and quick answers.</p>
+                    <button class="btn btn-outline" onclick="callPhone()">+971 50 123 4567</button>
+                </div>
+                <div class="contact-card" data-morph>
+                    <div class="card-bg"></div>
+                    <i class="fas fa-envelope icon"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us your project details and we'll respond with a custom proposal.</p>
+                    <button class="btn btn-outline" onclick="sendEmail()">info@hextech.ae</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactForm" class="contactForm">
+        <div class="form-header">
+            <h3>Tell Us About Your Project</h3>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+        </div>
+        <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="Your Company Ltd.">
+                    </div>
+                    <div class="form-group">
+                        <label>Package Interest</label>
+                        <select id="packageSelect">
+                            <option>Basic - Starter Presence</option>
+                            <option>Growth - Engage & Convert</option>
+                            <option>Elite - Enterprise Experience</option>
+                            <option>Custom Solution</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group form-full">
+                    <label>Project Details</label>
+                    <textarea placeholder="Tell us about your project, goals, timeline, and any specific requirements..." rows="6"></textarea>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                    <button type="submit" class="btn btn-primary">Send Project Details</button>
+                </div>
+            </form>
+            <div class="map-info-wrapper">
+                <div class="info-card">
+                    <h4>Business Hours</h4>
+                    <div class="info-details">
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p class="text-accent">UAE Time Zone (GMT+4)</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.822201261862!2d55.1651604!3d25.1078793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b1495a55be1%3A0x5b8e89f8023b5766!2sin5%20Tech!5e0!3m2!1sen!2sae!4v1754078884461!5m2!1sen!2sae"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 HexTech. All rights reserved. Transforming businesses through technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
