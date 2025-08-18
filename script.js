@@ -168,19 +168,6 @@ function initScrollAnimations() {
     document.head.appendChild(style);
 }
 
-function initServiceCards() {
-    document.querySelectorAll('.service-card').forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.2)';
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0) scale(1)';
-            card.style.boxShadow = 'none';
-        });
-    });
-}
-
 function initPackageSelection() {
     document.querySelectorAll('.package-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
