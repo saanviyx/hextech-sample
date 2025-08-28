@@ -4,7 +4,6 @@ let selectedAddons = [];
 document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initScrollAnimations();
-    initServiceCards();
     initPackageSelection();
     initContactActions();
     initFormSubmission();

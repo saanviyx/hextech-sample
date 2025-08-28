@@ -146,14 +146,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: clamp(60px, 8vw, 80px);
+    height: clamp(60px, 8vw, 50px);
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
 
 .nav-brand {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
     font-weight: 800;
     font-family: var(--font-mono);
     text-transform: uppercase;
@@ -189,7 +189,6 @@ body {
     letter-spacing: 1px;
     position: relative;
     transition: all 0.3s ease;
-    padding: 0.5rem 0;
 }
 
 .nav-link::before {
@@ -307,7 +306,7 @@ body {
     grid-template-columns: 1.6fr 0.9fr;
     gap: clamp(2rem, 5vw, 3rem);
     align-items: center;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     opacity: 0;                 
     transition: opacity 0.3s ease;
