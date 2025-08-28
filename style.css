@@ -147,7 +147,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: clamp(60px, 8vw, 50px);
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
